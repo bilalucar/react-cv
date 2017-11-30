@@ -15,7 +15,24 @@ class App extends Component {
       bilgi: {
         "Experiences" : [],
         "Projects" : [],
-        "Skills" : [],
+        "Skills" : [
+          {
+            "ad" : "JavaScript",
+            "yuzde" : "80%"
+          },
+          {
+            "ad" : "PHP",
+            "yuzde" : "50%"
+          },
+          {
+            "ad" : "Java",
+            "yuzde" : "75%"
+          },
+          {
+            "ad" : "Wordpress",
+            "yuzde" : "98%"
+          }
+        ],
         "Language" : [],
         "Education" : []
       }
@@ -30,6 +47,9 @@ class App extends Component {
         bilgi: snap.val()
       });
     });
+  }
+  componentDidMount(){
+
   }
 
   render() {
