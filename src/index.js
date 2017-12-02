@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import * as firebase from 'firebase';
-
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Admin from "./Admin";
 var config = {
     apiKey: "AIzaSyC9p4u9gk49v4YekwGJYZa8DBqUdhottsc",
     authDomain: "reactcv-5cceb.firebaseapp.com",
@@ -15,5 +16,11 @@ var config = {
   };
   firebase.initializeApp(config);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+        <Router>
+                 <Switch>
+                    <Route exact path='/' component={App} />
+                    <Route exact path='/admin' component={Admin} />
+                 </Switch>
+           </Router>, document.getElementById('root'));
 registerServiceWorker();

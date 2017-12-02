@@ -8,7 +8,7 @@ import Language from "./Language";
 import Education from "./Education";
 import * as firebase from 'firebase';
 
-class App extends Component {
+class Admin extends Component {
   constructor(){
     super();
     this.state = {
@@ -128,4 +128,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Admin;
