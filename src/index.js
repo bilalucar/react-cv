@@ -7,12 +7,12 @@ import * as firebase from 'firebase';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Admin from "./Admin";
 var config = {
-    apiKey: "AIzaSyC9p4u9gk49v4YekwGJYZa8DBqUdhottsc",
-    authDomain: "reactcv-5cceb.firebaseapp.com",
-    databaseURL: "https://reactcv-5cceb.firebaseio.com",
-    projectId: "reactcv-5cceb",
-    storageBucket: "reactcv-5cceb.appspot.com",
-    messagingSenderId: "771929300113"
+    apiKey: "APIKEY",
+    authDomain: "PROJECTID.firebaseapp.com",
+    databaseURL: "https://PROJECTID.firebaseio.com",
+    projectId: "PROJECTID",
+    storageBucket: "PROJECTID.appspot.com",
+    messagingSenderId: "MESSAGINGSENDERID"
   };
   firebase.initializeApp(config);
 
